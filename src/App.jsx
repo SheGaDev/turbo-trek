@@ -1,6 +1,7 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { lazy } from "react";
 import "./styles/globals.css";
+import Layout from "./components/layout/Layout";
 
 const MainPage = lazy(() => import("./pages/Main"));
 const CatalogPage = lazy(() => import("./pages/Catalog"));
@@ -10,11 +11,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/">
-          <Route index element={<MainPage />}></Route>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<MainPage />} />
           <Route path="catalog" element={<CatalogPage />} />
           <Route path="favorites" element={<FavoritePage />} />
         </Route>
+        <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </>
   );
