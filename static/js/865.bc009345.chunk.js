@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkturbo_trek=self.webpackChunkturbo_trek||[]).push([[865],{865:(e,r,t)=>{t.r(r),t.d(r,{default:()=>n});var u=t(184);function n(){return(0,u.jsx)("h1",{children:"Main"})}}}]);
+//# sourceMappingURL=865.bc009345.chunk.js.map
