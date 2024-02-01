@@ -16,7 +16,6 @@ class AdvertsService {
   async fetchAdverts(page = 1) {
     this.params.page = page;
     const response = await instanse.get("adverts", { params: this.params });
-    console.log(response);
     return response.data;
   }
 }
