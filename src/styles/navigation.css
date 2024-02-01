@@ -1,0 +1,24 @@
+.flex-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.link {
+  display: inline-block;
+  padding: 12px 32px;
+  transition: color var(--animate);
+}
+
+.li-navigation {
+  border: none;
+  border-radius: 12px;
+  border: 2px solid var(--button-color);
+  transition: background-color var(--animate);
+}
+
+.li-navigation:is(:hover, :focus) {
+  border-color: var(--button-color-hover);
+  background-color: var(--button-color-hover);
+}
