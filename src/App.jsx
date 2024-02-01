@@ -1,6 +1,6 @@
+import "./styles";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { lazy } from "react";
-import "./styles/globals.css";
 import Layout from "./components/layout/Layout";
 
 const MainPage = lazy(() => import("./pages/Main"));
