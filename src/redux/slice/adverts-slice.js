@@ -1,4 +1,4 @@
-import { createSlice, isPending, isRejected } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { advertsState } from "../state/adverts-state";
 
 const advertsSlice = createSlice({
