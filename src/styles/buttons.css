@@ -1,0 +1,29 @@
+.search-button {
+  width: 10%;
+}
+
+.learn-button {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  color: var(--second-text-color);
+}
+
+.more-button {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  color: var(--button-color);
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  border: none;
+  background-color: transparent;
+}
+
+.more-button:is(:hover, :focus) {
+  background-color: transparent;
+  color: var(--button-color-hover);
+}
